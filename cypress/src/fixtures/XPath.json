@@ -1,0 +1,12 @@
+{
+    "loginEmail":"//input[@data-qa='login-email']",
+    "test1":"//a[normalize-space()='API Testing']",
+    "errorMsg":"//p[normalize-space()='Email Address already exist!']",
+    "deleteAcXpath":"[//*[@id='header']/div/div/div/div[2]/div/ul/li[5]/a']",
+    "LoginEmailPasswordError":"//p[normalize-space()='Your email or password is incorrect!']",
+    "pageSlider":"//*[@id='slider']",
+    "featureItems":"//*[@class='features_items']",
+    "newsLetterLabel":"//label[@for='newsletter']"
+
+
+}

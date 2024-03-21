@@ -1,0 +1,25 @@
+{
+    
+    "signName":"[data-qa='signup-name']",
+    "signEmail":"[data-qa='signup-email']",
+    "signBtn":"[data-qa='signup-button']",
+    "gender":"[id='id_gender1']",
+    "password":"[data-qa='password']",
+    "day":"[data-qa='days']",
+    "month":"[data-qa='months']",
+    "year":"[data-qa='years']",
+    "firstName":"[data-qa='first_name']",
+    "lastName":"[data-qa='last_name']",
+    "company":"[data-qa='company']",
+    "country":"[data-qa='country']",
+    "address":"[data-qa='address']",
+    "address2":"[data-qa='address2']",
+    "state":"[data-qa='state']",
+    "city":"[data-qa='city']",
+    "zipcode":"[data-qa='zipcode']",
+    "mobileNumber":"[data-qa='mobile_number']",
+    "createAccountBtn":"[data-qa='create-account']",
+    "loginEmail":"[data-qa='login-email']",
+    "loginPassword":"[data-qa='login-password']",
+    "loginBtn":"[data-qa='login-button']"
+}
