@@ -6,7 +6,8 @@
     "LoginEmailPasswordError":"//p[normalize-space()='Your email or password is incorrect!']",
     "pageSlider":"//*[@id='slider']",
     "featureItems":"//*[@class='features_items']",
-    "newsLetterLabel":"//label[@for='newsletter']"
+    "newsLetterLabel":"//label[@for='newsletter']",
+    "pageHomeHeader":"//ul[@class='nav nanbar-nav']//li"
 
 
 }

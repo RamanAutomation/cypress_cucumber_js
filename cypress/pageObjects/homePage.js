@@ -11,6 +11,7 @@ export class Homepage {
                 AllValues.push(text.trim());
                 cy.then(() => {
                     console.log('All values', AllValues)
+                    //this.visitHomePage().should('have.text'.AllValues)
                 })
 
             })
@@ -26,5 +27,16 @@ export class Homepage {
                 })
             })
         })
+    }
+    grabHomepageHeaders(){
+        const HeaderNames =[];
+        cy.customPath(sharedFunctions.getXpathValue('pageHomeHeader')).should('exist').then(()=>{
+            for(let i=0;i<8;i++){
+                cy.customPath(sharedFunctions.getXpathValue('pageHomeHeader')).eq(i).invoke('text').then((Headers)=>{
+                    HeaderNames.push(Headers)
+                })
+            }
+        })
+        
     }
 }

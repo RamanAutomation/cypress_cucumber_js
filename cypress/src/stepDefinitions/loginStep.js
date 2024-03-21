@@ -61,3 +61,7 @@ Given("Grab all feature items", () => {
   HomePage.grabAllFeaturesItems()
 
 });
+Then("Grab the home page headers",()=>{
+  HomePage.grabHomepageHeaders()
+})
+
