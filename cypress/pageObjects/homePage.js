@@ -39,4 +39,33 @@ export class Homepage {
         })
         
     }
+    goBackFunction() {
+        cy.visit('/')
+        cy.title().should('eq', 'Automation Exercise')
+        cy.customPath(sharedFunctions.getXpathValue('headerProduct')).click()
+        cy.title().should('eq', 'Automation Exercise - All Products')
+        cy.go('back')
+        cy.title().should('eq', 'Automation Exercise')
+        cy.go('forward')
+        cy.title().should('eq', 'Automation Exercise - All Products')
+        cy.go(-1)
+        cy.title().should('eq', 'Automation Exercise')
+        cy.go(1)
+        cy.title().should('eq', 'Automation Exercise - All Products')
+        cy.reload()
+    }
+
+
+  ImplicitAssertions() {
+        cy.visit('/')
+        // cy.url().should('include', 'automationexercise.com')
+        // cy.url().should('eq','https://automationexercise.com/')
+        // cy.url().should('contains','automatione')
+
+        cy.url().should('include', 'automationexercise.com')
+            .and('eq', 'https://automationexercise.com/')
+            .and('contains', 'automatione')
+            .and('not.contain','test')
+    }
+
 }

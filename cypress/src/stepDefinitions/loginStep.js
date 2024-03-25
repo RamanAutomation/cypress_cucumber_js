@@ -65,3 +65,9 @@ Then("Grab the home page headers",()=>{
   HomePage.grabHomepageHeaders()
 })
 
+Then("verify user should be able to Back & forward",()=>{
+  HomePage.goBackFunction()
+})
+Then("Implicit Assertions verify URL",()=>{
+  HomePage.ImplicitAssertions()
+})
