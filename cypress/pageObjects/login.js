@@ -16,7 +16,7 @@ export class login {
   ClickLoginBtn() {
     return cy.customPath(sharedFunctions.getIdValue('loginBtn')).should('be.visible').click()
   }
-  removeLoagin() {
+  removeLogin() {
     const Email = Cypress.env("signUpUser1").email;
     this.enterLoginEmail(Email)
   }

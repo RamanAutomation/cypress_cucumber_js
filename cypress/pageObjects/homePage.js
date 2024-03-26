@@ -10,7 +10,7 @@ export class Homepage {
             cy.wrap(elements).invoke('text').then((text) => {
                 AllValues.push(text.trim());
                 cy.then(() => {
-                    console.log('All values', AllValues)
+                    cy.log('All values', AllValues)
                     //this.visitHomePage().should('have.text'.AllValues)
                 })
 
@@ -23,7 +23,7 @@ export class Homepage {
             cy.wrap(elements).invoke('text').then((text) => {
                 AllfeatureItems.push(text.trim())
                 cy.then(() => {
-                    console.log('All features iems', AllfeatureItems)
+                    cy.log('All features iems', AllfeatureItems)
                 })
             })
         })
@@ -42,7 +42,7 @@ export class Homepage {
     goBackFunction() {
         cy.visit('/')
         cy.title().should('eq', 'Automation Exercise')
-        cy.customPath(sharedFunctions.getXpathValue('headerProduct')).click()
+        cy.customPath(sharedFunctions.getXpathValue('productHeader')).click()
         cy.title().should('eq', 'Automation Exercise - All Products')
         cy.go('back')
         cy.title().should('eq', 'Automation Exercise')

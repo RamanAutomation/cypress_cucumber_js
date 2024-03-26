@@ -7,7 +7,7 @@
     "pageSlider":"//*[@id='slider']",
     "featureItems":"//*[@class='features_items']",
     "newsLetterLabel":"//label[@for='newsletter']",
-    "pageHomeHeader":"//ul[@class='nav nanbar-nav']//li"
-
+    "pageHomeHeader":"//ul[@class='nav navbar-nav']/li",
+    "productHeader":"//a[@href='/products']"
 
 }

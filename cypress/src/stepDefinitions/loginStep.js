@@ -35,7 +35,7 @@ Then("Verify the email and password are invalid", () => {
   Login.LoginEmailPasswordError()
 })
 Then('Testing', (Email) => {
-  Login.removeLoagin(Email)
+  Login.removeLogin(Email)
 })
 
 When("I enter user name and email details in signup new user page",()=>{
@@ -70,4 +70,12 @@ Then("verify user should be able to Back & forward",()=>{
 })
 Then("Implicit Assertions verify URL",()=>{
   HomePage.ImplicitAssertions()
+})
+
+Then("I verify the input name and email id",()=>{
+  SignUp.inputsignNameAndEmailVerify()
+})
+
+Then("I verify the input name and email id in next page",()=>{
+  SignUp.inputsignNameAndEmailVerifyInvokeMethod()
 })

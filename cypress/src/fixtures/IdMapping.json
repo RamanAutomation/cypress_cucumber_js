@@ -3,6 +3,8 @@
     "signName":"[data-qa='signup-name']",
     "signEmail":"[data-qa='signup-email']",
     "signBtn":"[data-qa='signup-button']",
+    "nameSign":"[data-qa='name']",
+    "emailSign":"[data-qa='email']",
     "gender":"[id='id_gender1']",
     "password":"[data-qa='password']",
     "day":"[data-qa='days']",
