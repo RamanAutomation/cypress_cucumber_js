@@ -35,3 +35,26 @@ Cypress.Commands.add('customPath',(selector)=>{
 Cypress.Commands.add("ifXPathExist", (xpath) => {
   return cy.xpath('count(' + xpath + ')')
 })
+
+
+Cypress.Commands.add('customPath',(selector)=>{
+  if(selector.startsWith('//')){
+    return cy.xpath(selector)
+  }else{
+      return cy.get(selector)
+  }  
+})
+
+Cypress.Commands.add('getResponse',()=>{
+cy.request('GET','https://automationexercise.com/api/productsList').as('apiresponse')
+cy.get('@apiresponse').then((response)=>{
+  return response
+})
+})
+
+Cypress.Commands.add('postResponse',()=>{
+cy.request('POST','https://automationexercise.com/api/productsList').as('apiPostResponse')
+cy.get('@apiPostResponse').then((response)=>{
+  return response
+})
+})
