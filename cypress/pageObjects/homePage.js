@@ -67,5 +67,11 @@ export class Homepage {
             .and('contains', 'automatione')
             .and('not.contain','test')
     }
-
+    verifyHeaderDynamic(){
+        const headers = ['Home','Products','Cart','Signup / Login','Test Cases','API Testing','Video Tutorials','Contact us']
+        headers.forEach((value, index)=>{
+          const i= index + 1;
+          cy.get(`.shop-menu > .nav > :nth-child(${i}) > a`).and('contain', value)
+        })
+    }
 }

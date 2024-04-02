@@ -58,3 +58,13 @@ cy.get('@apiPostResponse').then((response)=>{
   return response
 })
 })
+Cypress.Commands.add('getAllbrandlist', () => {
+  cy.request({
+      method: 'GET',
+      url: 'https://automationexercise.com/api/brandsList',
+      failOnStatusCode: false
+  }).as('brandList')
+  cy.get('@brandList').then((res) => {
+      return res
+  })
+})

@@ -79,3 +79,6 @@ Then("I verify the input name and email id",()=>{
 Then("I verify the input name and email id in next page",()=>{
   SignUp.inputsignNameAndEmailVerifyInvokeMethod()
 })
+Then("verify the home page headers are visible",()=>{
+HomePage.verifyHeaderDynamic()
+})

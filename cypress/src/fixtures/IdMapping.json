@@ -23,5 +23,6 @@
     "createAccountBtn":"[data-qa='create-account']",
     "loginEmail":"[data-qa='login-email']",
     "loginPassword":"[data-qa='login-password']",
-    "loginBtn":"[data-qa='login-button']"
+    "loginBtn":"[data-qa='login-button']",
+    "selector": ".shop-menu > .nav > :nth-child({{i}}) > a"
 }

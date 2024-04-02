@@ -30,6 +30,7 @@ verifystatuscode(statusCode){
     cy.getAllbrandlist().then((val)=>{
         const body=val.body
         const logObject=JSON.parse(body)
+        cy.writeFile('cypress/src/fixtures/brandList.json',logObject)
         logObject.brands.forEach((element)=>{
             const id =element.id
             const brand=element.brand
@@ -37,6 +38,20 @@ verifystatuscode(statusCode){
             cy.log('Brand name', brand)
             cy.log('Brand id', id)
         })
+    })
+   }
+   getAllProductList(){
+    cy.getResponse().then((response)=>{
+        const body =response.body
+        cy.writeFile('cypress/src/fixtures/productList.json',body)
+        const logObject =JSON.parse(body)
+        cy.log(logObject)
+         logObject.products.forEach((element)=>{
+            const name =element.name
+            cy.log('productName',name)
+            dataMap.set(name)
+         })
+
     })
    }
 }

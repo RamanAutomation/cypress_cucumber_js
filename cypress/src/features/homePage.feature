@@ -8,3 +8,7 @@ Feature: HomePage
   Scenario: Back & forward test
     And verify user should be able to Back & forward
     And Implicit Assertions verify URL
+
+  Scenario: Verify the home page headers
+    Given I navigate to automation exercise website home
+    Then verify the home page headers are visible

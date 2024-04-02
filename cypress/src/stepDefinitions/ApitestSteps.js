@@ -12,6 +12,9 @@ Then("verify the response status message is {string}",(statusMessage)=>{
 Then("verify POST response Error message and code",()=>{
     ApiTest.verifyPostResError()
 })
-Then(" Get all brand list and store",()=>{
+Then("Get all brand list and store",()=>{
   ApiTest.getAllbrandlist()
+})
+Then("Get all product list and store",()=>{
+  ApiTest.getAllProductList()
 })
