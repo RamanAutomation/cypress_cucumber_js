@@ -4,7 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "cypress open",
+    "cy-run":"cypress run",
+    "cy-apitesting":"cypress run --browser chrome --spec cypress/src/features/ApiTesting.feature",
+    "cy-fileupload":"cypress run --browser chrome --spec cypress/src/features/fileUpload.feature",
+    "cy-homepage":"cypress run --browser chrome --spec cypress/src/features/homePage.feature",
+    "cy-login":"cypress run --browser chrome --spec cypress/src/features/login.feature",
+    "cy-sign":"cypress run --browser chrome --spec cypress/src/features/signUp.feature",
+    "cloudRecord":"npx cypress run --record --key f9d1e573-e5a0-41d3-bcf5-f5b567aeaae9"
   },
   "author": "",
   "license": "ISC",
