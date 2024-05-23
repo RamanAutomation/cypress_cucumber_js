@@ -30,10 +30,10 @@ module.exports = defineConfig({
 	},
 	"env": {
 		"db": {
-		  "server": 'Mysql@localhost:3306',
+		  "server": 'Local instance MySQL80',
 		  user: "root",
 		  password: "ramans@1916J",
-		  database: "Testing"
+		  database: "firstproject"
 		}
 	  }
 });
